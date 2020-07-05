@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS Exercise 3</title>
+  <meta name="description" content="ITA CSS Layout Exercise">
+  <meta name="author" content="Mark Kroh">
+
+  <style>
+  	.container {
+		background-color: white;
+		display: grid;
+		grid-template-columns: repeat(13, 20px);
+		grid-template-rows: repeat(13, 20px);
+		justify-content: center;
+	}
+
+	.div1 {
+		grid-column: 2/7;
+		grid-row: 2/7;
+		background-color: blue;
+	}
+		
+	.div2 {
+		grid-column: 8/13;
+		grid-row: 2/7;
+		background-color: blue;
+	}
+		
+	.div3 {
+		grid-column: 2/7;
+		grid-row: 8/13;
+		background-color: blue;
+	}
+	
+	.div4 {
+		grid-column: 8/13;
+		grid-row: 8/13;
+		background-color: blue;
+	}
+
+	.div5 {
+		grid-column: 5/10;
+		grid-row: 5/10;
+		background-color: red;
+		transform: rotate(45deg);
+	
+	}
+		.div5::before {
+			content: '';
+			position: absolute;
+			top: 35px;
+			left: 35px;
+			
+			
+			height: 30px;
+			width: 30px;
+      		background-color: white;
+      		border-radius: 50%
+		}
+			.div5::after {
+				content: '\2605';
+				position: absolute;
+				top: 38px;
+				left: 43px;
+				color: black;
+				transform: rotate(27deg);
+			}
+	
+  </style>
+</head>
+<body>
+	<!-- Do not touch the HTML please -->
+	<div class="container">
+		<div class="interior div1"></div>
+		<div class="interior div2"></div>
+		<div class="interior div3"></div>
+		<div class="interior div4"></div>
+		<div class="interior div5"></div>
+	</div>
+</body>
+</html>

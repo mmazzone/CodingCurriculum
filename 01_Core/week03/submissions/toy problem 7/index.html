@@ -1,0 +1,170 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS Exercise 7</title>
+  <meta name="description" content="ITA CSS Layout Exercise">
+  <meta name="author" content="Mark Kroh">
+
+  <style>
+	  .container {
+        background-color: white;
+        position: relative;
+    }
+
+    .div1 {
+        background-color: #ff4b47;
+        position: absolute;
+        top: 0px;
+        left: 120px;
+    }
+    
+    .div1::before {
+        background: #ff9897;
+        height: 100px;
+        width: 100px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: -120px;
+    }
+    
+    .div1::after {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: -120px;
+    }
+
+    .div2 {
+        background-color: #ffc13f;
+        position: absolute;
+        top: 120px;
+        left: 120px;
+    }
+
+    .div2::before {
+        background: #ffdc95;
+        height: 100px;
+        width: 100px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: -120px;
+    }
+    
+    .div2::after {
+        background-color: #ffa600;
+        height: 100px;
+        width: 100px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: -120px;
+    }
+
+    .div3 {
+        background-color: #fffc4d;
+        position: absolute;
+        top: 240px;
+        left: 120px;
+    }
+
+    .div3::before {
+        background: #fffd99;
+        height: 100px;
+        width: 100px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: -120px;
+    }
+    
+    .div3::after {
+        background-color: yellow;
+        height: 100px;
+        width: 100px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: -120px;
+    }
+
+    .div4 {
+        background-color: #4c4cfb;
+        position: absolute;
+        top: 360px;
+        left: 120px;
+    }
+
+    .div4::before {
+        background: #9999fc;
+        height: 100px;
+        width: 100px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: -120px;
+    }
+    
+    .div4::after {
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: -120px;
+    }
+
+    .div5 {
+        background-color: #f3a7f3;
+        position: absolute;
+        top: 480px;
+        left: 120px;
+    }
+
+    .div5::before {
+        background: #f8cdf8;
+        height: 100px;
+        width: 100px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: -120px;
+    }
+    
+    .div5::after {
+        background-color: violet;
+        height: 100px;
+        width: 100px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: -120px;
+    }
+
+    .interior {
+        margin-bottom: 20px;
+        height: 100px;
+        width: 100px;
+    }
+
+  </style>
+</head>
+<body>
+	<!-- Do not touch the HTML please -->
+	<div class="container">
+		<div class="interior div1"></div>
+		<div class="interior div2"></div>
+		<div class="interior div3"></div>
+		<div class="interior div4"></div>
+		<div class="interior div5"></div>
+	</div>
+</body>
+</html>
