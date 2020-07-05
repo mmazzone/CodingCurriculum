@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS Exercise 4</title>
+  <meta name="description" content="ITA CSS Layout Exercise">
+  <meta name="author" content="Mark Kroh">
+
+  <style>
+  	.container {
+		background-color: white;
+		display: grid;
+		grid-template-columns: repeat(10, 50px);
+		grid-template-rows: repeat(8, 50px);
+		justify-content: center;
+	}
+
+	.div1 {
+		grid-column: 3/5;
+		grid-row: 2/4;
+		background-color: red;
+		border-style: solid;
+		border-width: 5px;
+		border-color: white;
+	}
+		
+	.div2 {
+		grid-column: 4/6;
+		grid-row: 3/5;
+		background-color: orange;
+		border-style: solid;
+		border-width: 5px;
+		border-color: white;
+	}
+		
+	.div3 {
+		grid-column: 5/7;
+		grid-row: 4/6;
+		background-color: yellow;
+		border-style: solid;
+		border-width: 5px;
+		border-color: white;
+	}
+	
+	.div4 {
+		grid-column: 6/8;
+		grid-row: 5/7;
+		background-color: blue;
+		border-style: solid;
+		border-width: 5px;
+		border-color: white;
+	}
+
+	.div5 {
+		grid-column: 7/9;
+		grid-row: 6/8;
+		background-color: violet;
+		border-style: solid;
+		border-width: 5px;
+		border-color: white;
+	}
+
+  </style>
+</head>
+<body>
+	<!-- Do not touch the HTML please -->
+	<div class="container">
+		<div class="interior div1"></div>
+		<div class="interior div2"></div>
+		<div class="interior div3"></div>
+		<div class="interior div4"></div>
+		<div class="interior div5"></div>
+	</div>
+</body>
+</html>
