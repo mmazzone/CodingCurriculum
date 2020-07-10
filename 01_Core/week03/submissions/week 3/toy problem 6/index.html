@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS Exercise 6</title>
+  <meta name="description" content="ITA CSS Layout Exercise">
+  <meta name="author" content="Mark Kroh">
+
+  <style>
+  	.container {
+		background-color: white;
+		display: grid;
+		grid-template-columns: repeat(20, 20px);
+		grid-template-rows: repeat(12, 20px);
+		justify-content: center;
+	}
+
+	.div1 {
+		grid-column: 5/10;
+		grid-row: 2/7;
+		background-color: red;
+		border: 5px solid white;
+	}
+		
+	.div2 {
+		grid-column: 12/17;
+		grid-row: 2/7;
+		background-color: orange;
+		border: 5px solid white;
+		outline: .01px dotted orange;
+		transform: rotate(72deg);
+		
+	}
+		
+	.div3 {
+		grid-column: 10/15;
+		grid-row: 6/11;
+		background-color: yellow;
+		border: 5px solid white;
+		outline: .01px dotted yellow;
+		transform: rotate(54deg);
+	}
+	
+	.div4 {
+		grid-column: 6/11;
+		grid-row: 4/9;
+		background-color: blue;
+		border: 5px solid white;
+		outline: .01px dotted blue;
+		transform: rotate(36deg);
+	}
+
+	.div5 {
+		grid-column: 2/7;
+		grid-row: 4/9;
+		background-color: violet;
+		border: 5px solid white;
+		outline: .01px dotted violet;
+		transform: rotate(18deg);
+	}
+
+  </style>
+</head>
+<body>
+	<!-- Do not touch the HTML please -->
+	<div class="container">
+		<div class="interior div1"></div>
+		<div class="interior div2"></div>
+		<div class="interior div3"></div>
+		<div class="interior div4"></div>
+		<div class="interior div5"></div>
+	</div>
+</body>
+</html>
